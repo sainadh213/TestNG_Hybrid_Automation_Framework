@@ -16,29 +16,31 @@ import org.testng.annotations.BeforeClass;
 
 import com.testNG.hybrid.automation.framework.utils.FileUtil;
 
-
-
 public class BaseTest {
-	public static WebDriver driver;
-	FileUtil fileUtil = new FileUtil();;
+	private static ThreadLocal<WebDriver> driver = new ThreadLocal<>();
+	FileUtil fileUtil = new FileUtil();
+
+	public static WebDriver getDriver() {
+		return driver.get();
+	}
 
 	@BeforeClass(alwaysRun = true)
 	public void launch() throws Throwable {
 		String browser = fileUtil.readDataFromPropertiesFile("browser");
 		if (browser.equalsIgnoreCase("chrome")) {
 
-			driver = new ChromeDriver();
+			driver.set(new ChromeDriver());
 		}
 
 		else if (browser.equalsIgnoreCase("firefox")) {
-			driver = new FirefoxDriver();
+			driver.set(new FirefoxDriver());
 		}
 
-		driver.manage().window().maximize();
-		driver.manage().timeouts().pageLoadTimeout(Duration.ofSeconds(10));
-		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
+		getDriver().manage().window().maximize();
+		getDriver().manage().timeouts().pageLoadTimeout(Duration.ofSeconds(10));
+		getDriver().manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
 		String url = fileUtil.readDataFromPropertiesFile("url");
-		driver.get(url);
+		getDriver().get(url);
 
 	}
 
@@ -49,7 +51,13 @@ public class BaseTest {
 		 */
 
 		String timeStamp = new SimpleDateFormat("yyyyMMdd_HHmmss").format(new Date());
-		TakesScreenshot ts = (TakesScreenshot) driver;
+
+		WebDriver currentDriver = getDriver();
+		if (currentDriver == null) {
+			return null;
+		}
+
+		TakesScreenshot ts = (TakesScreenshot) currentDriver;
 		File src = ts.getScreenshotAs(OutputType.FILE);
 		String path = System.getProperty("user.dir") + "\\Screenshots\\" + testName + "_" + timeStamp + ".png";
 		File dest = new File(path);
@@ -60,7 +68,9 @@ public class BaseTest {
 
 	@AfterClass(alwaysRun = true)
 	public void closeApp() {
-		if (driver != null)
-			driver.quit();
+		if (getDriver() != null)
+			getDriver().quit();
+		driver.remove();
+
 	}
 }

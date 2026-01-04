@@ -12,17 +12,17 @@ import com.testNG.hybrid.automation.framework.utils.FileUtil;
 
 
 
-@Listeners(com.testNG.hybrid.automation.framework.listeners.MyListener.class)
+//@Listeners(com.testNG.hybrid.automation.framework.listeners.MyListener.class)
 public class LoginTest extends BaseTest {
 	
 	FileUtil fu;
 	HomePage hp;
 	LoginPage lp;
 
-	@Test(priority = 0)
+	@Test(priority = 0,groups= {"smoke","regression"})
 	public void loginWithValidCredentials() {
-		hp = new HomePage(driver);
-		lp = new LoginPage(driver);
+		hp = new HomePage(getDriver());
+		lp = new LoginPage(getDriver());
 		hp.clickOnMyAccountDM();
 	hp.clickOnLoign();
 		//hp.clickOnSpecificButton("Login");
@@ -33,10 +33,10 @@ public class LoginTest extends BaseTest {
 		hp.clickOnMyAccountDM();
 		hp.clickOnLogout();
 	}
-	@Test(priority = 1)
+	@Test(priority = 1,groups = {"smoke"})
 	public void loginWithValidCredentialsUsingExcel() throws Throwable {
-		hp = new HomePage(driver);
-		lp = new LoginPage(driver);
+		hp = new HomePage(getDriver());
+		lp = new LoginPage(getDriver());
 		hp.clickOnMyAccountDM();
 		hp.clickOnLoign();
 		//hp.clickOnSpecificButton("Login");
@@ -50,10 +50,10 @@ public class LoginTest extends BaseTest {
 		hp.clickOnMyAccountDM();
 		hp.clickOnLogout();
 	}
-	@Test(dataProvider = "validCredentialsData", priority = 2)
+	@Test(dataProvider = "validCredentialsData", priority = 2,groups= {"regression"})
 	public void validLoginWIthDataProvider(String username, String password) {
-		hp = new HomePage(driver);
-		lp = new LoginPage(driver);
+		hp = new HomePage(getDriver());
+		lp = new LoginPage(getDriver());
 		hp.clickOnMyAccountDM();
 		hp.clickOnLoign();
 		//hp.clickOnSpecificButton("Login");
@@ -71,11 +71,11 @@ public class LoginTest extends BaseTest {
 		Object[][] data = fu.getDataFromExcelToDataProvider("ValidLoginCredentials");
 		return data;
 	}
-	@Test(dataProvider = "invalidCredentialsData",priority = 3)
+	@Test(dataProvider = "invalidCredentialsData",priority = 3,groups= {"smoke"})
 	public void invalidCredentials(String username,String password)
 	{
-		hp = new HomePage(driver);
-		lp = new LoginPage(driver);
+		hp = new HomePage(getDriver());
+		lp = new LoginPage(getDriver());
 		hp.clickOnMyAccountDM();
 		hp.clickOnLoign();
 		//hp.clickOnSpecificButton("Login");

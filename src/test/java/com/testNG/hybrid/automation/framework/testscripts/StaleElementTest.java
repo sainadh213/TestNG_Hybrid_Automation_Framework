@@ -12,8 +12,8 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.io.FileHandler;
 import org.testng.annotations.Test;
 
-public class StaleElement {
-	@Test
+public class StaleElementTest {
+	@Test(groups={"practice"})
 	public void login() throws Throwable
 	{
 		WebDriver driver=new ChromeDriver();
@@ -38,7 +38,8 @@ public class StaleElement {
 	File src = ts.getScreenshotAs(OutputType.FILE);
 	File dest=new File("C:\\Users\\SaiNadh\\eclipse-workspace\\automation-project\\Screenshots\\test.png");
 	FileHandler.copy(src, dest);*/
-	
+	driver.close();
 	}
+	
 	
 }

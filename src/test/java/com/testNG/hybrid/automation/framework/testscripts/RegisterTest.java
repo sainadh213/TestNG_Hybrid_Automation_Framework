@@ -12,16 +12,16 @@ import com.testNG.hybrid.automation.framework.utils.FileUtil;
 
 
 
-@Listeners(com.testNG.hybrid.automation.framework.listeners.MyListener.class)
+//@Listeners(com.testNG.hybrid.automation.framework.listeners.MyListener.class)
 public class RegisterTest extends BaseTest {
 	HomePage hp;
 	FileUtil fu;
 	RegisterPage rp;
 
-	@Test(dataProvider = "getDataFromExcel")
+	@Test(dataProvider = "getDataFromExcel",groups= {"smoke","regression"})
 	public void registration(String firstname,String lastname,String emial,String telephone,String password,String ConfirmPassword) {
-		hp = new HomePage(driver);
-		rp=new RegisterPage(driver);
+		hp = new HomePage(getDriver());
+		rp=new RegisterPage(getDriver());
 		hp.clickOnMyAccountDM();
 		hp.clickOnRegiter();
 		rp.enterFirstname(firstname);

@@ -7,8 +7,8 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.annotations.Test;
 
-public class Interview {
-	@Test
+public class InterviewTest {
+	@Test(groups={"practice"})
 	public void LoginTest() {
 		WebDriver driver = new ChromeDriver();
 		driver.manage().window().maximize();
@@ -20,6 +20,7 @@ public class Interview {
 		driver.findElement(By.id("input-email")).sendKeys("sainadh123@gmail.com");
 		driver.findElement(By.id("input-password")).sendKeys("sainadh@123");
 		driver.findElement(By.xpath("//input[@value='Login']")).click();
+		driver.close();
 
 	}
 
