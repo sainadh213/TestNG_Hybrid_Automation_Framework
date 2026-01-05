@@ -65,7 +65,11 @@ public class MyListener implements ITestListener {
 			
 			e.printStackTrace();
 		}
-		test.addScreenCaptureFromPath(path);
+		if (path != null) {
+	        test.addScreenCaptureFromPath(path);
+	    } else {
+	        test.log(Status.INFO, "Screenshot not captured (driver was null)");
+	    }
 		}
 
 	@Override
