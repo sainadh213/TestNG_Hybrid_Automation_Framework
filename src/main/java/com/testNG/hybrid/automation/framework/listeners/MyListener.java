@@ -80,12 +80,12 @@ public class MyListener implements ITestListener {
 		extent.flush();
 		String extentReportPath=System.getProperty("user.dir")+"\\ExtentReports\\ExtentReport.html";
 		File fi=new File(extentReportPath);
-		try {
+		/*try {
 			Desktop.getDesktop().browse(fi.toURI());
 		} catch (IOException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
-		}
+		}*/
 
 	}
 
