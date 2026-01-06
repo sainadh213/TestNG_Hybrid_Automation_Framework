@@ -5,6 +5,8 @@ import java.time.Duration;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.annotations.Test;
 
 public class InterviewTest {
@@ -19,7 +21,9 @@ public class InterviewTest {
 		driver.findElement(By.linkText("Login")).click();
 		driver.findElement(By.id("input-email")).sendKeys("sainadh123@gmail.com");
 		driver.findElement(By.id("input-password")).sendKeys("sainadh@123");
-		driver.findElement(By.xpath("//input[@value='Login']")).click();
+		WebDriverWait wait=new WebDriverWait(driver, Duration.ofSeconds(10));
+		wait.until(ExpectedConditions.elementToBeClickable(By.xpath("//input[@value='Login']"))).click();
+	//	driver.findElement(By.xpath("//input[@value='Login']")).click();
 		driver.close();
 
 	}

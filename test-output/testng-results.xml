@@ -1,46 +1,46 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="23" passed="18" failed="5" skipped="0">
+<testng-results ignored="0" total="23" passed="17" failed="6" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2026-01-05T19:16:05 IST" name="Default suite" finished-at="2026-01-05T19:19:30 IST" duration-ms="204203">
+  <suite started-at="2026-01-06T19:09:52 IST" name="Default suite" finished-at="2026-01-06T19:13:32 IST" duration-ms="219780">
     <groups>
       <group name="practice">
         <method signature="InterviewTest.LoginTest()[pri:0, instance:com.testNG.hybrid.automation.framework.testscripts.InterviewTest@6a2f6f80]" name="LoginTest" class="com.testNG.hybrid.automation.framework.testscripts.InterviewTest"/>
         <method signature="StaleElementTest.login()[pri:0, instance:com.testNG.hybrid.automation.framework.testscripts.StaleElementTest@683dbc2c]" name="login" class="com.testNG.hybrid.automation.framework.testscripts.StaleElementTest"/>
       </group> <!-- practice -->
       <group name="regression">
-        <method signature="LoginTest.loginWithValidCredentials()[pri:0, instance:com.testNG.hybrid.automation.framework.testscripts.LoginTest@d21a74c]" name="loginWithValidCredentials" class="com.testNG.hybrid.automation.framework.testscripts.LoginTest"/>
+        <method signature="LoginTest.loginWithValidCredentials()[pri:0, instance:com.testNG.hybrid.automation.framework.testscripts.LoginTest@6e509ffa]" name="loginWithValidCredentials" class="com.testNG.hybrid.automation.framework.testscripts.LoginTest"/>
         <method signature="RegisterTest.registration(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:com.testNG.hybrid.automation.framework.testscripts.RegisterTest@2898ac89]" name="registration" class="com.testNG.hybrid.automation.framework.testscripts.RegisterTest"/>
-        <method signature="LoginTest.validLoginWIthDataProvider(java.lang.String,java.lang.String)[pri:2, instance:com.testNG.hybrid.automation.framework.testscripts.LoginTest@d21a74c]" name="validLoginWIthDataProvider" class="com.testNG.hybrid.automation.framework.testscripts.LoginTest"/>
+        <method signature="LoginTest.validLoginWIthDataProvider(java.lang.String,java.lang.String)[pri:2, instance:com.testNG.hybrid.automation.framework.testscripts.LoginTest@6e509ffa]" name="validLoginWIthDataProvider" class="com.testNG.hybrid.automation.framework.testscripts.LoginTest"/>
       </group> <!-- regression -->
       <group name="smoke">
-        <method signature="LoginTest.loginWithValidCredentials()[pri:0, instance:com.testNG.hybrid.automation.framework.testscripts.LoginTest@d21a74c]" name="loginWithValidCredentials" class="com.testNG.hybrid.automation.framework.testscripts.LoginTest"/>
+        <method signature="LoginTest.loginWithValidCredentials()[pri:0, instance:com.testNG.hybrid.automation.framework.testscripts.LoginTest@6e509ffa]" name="loginWithValidCredentials" class="com.testNG.hybrid.automation.framework.testscripts.LoginTest"/>
         <method signature="RegisterTest.registration(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:com.testNG.hybrid.automation.framework.testscripts.RegisterTest@2898ac89]" name="registration" class="com.testNG.hybrid.automation.framework.testscripts.RegisterTest"/>
-        <method signature="LoginTest.loginWithValidCredentialsUsingExcel()[pri:1, instance:com.testNG.hybrid.automation.framework.testscripts.LoginTest@d21a74c]" name="loginWithValidCredentialsUsingExcel" class="com.testNG.hybrid.automation.framework.testscripts.LoginTest"/>
-        <method signature="LoginTest.invalidCredentials(java.lang.String,java.lang.String)[pri:3, instance:com.testNG.hybrid.automation.framework.testscripts.LoginTest@d21a74c]" name="invalidCredentials" class="com.testNG.hybrid.automation.framework.testscripts.LoginTest"/>
+        <method signature="LoginTest.loginWithValidCredentialsUsingExcel()[pri:1, instance:com.testNG.hybrid.automation.framework.testscripts.LoginTest@6e509ffa]" name="loginWithValidCredentialsUsingExcel" class="com.testNG.hybrid.automation.framework.testscripts.LoginTest"/>
+        <method signature="LoginTest.invalidCredentials(java.lang.String,java.lang.String)[pri:3, instance:com.testNG.hybrid.automation.framework.testscripts.LoginTest@6e509ffa]" name="invalidCredentials" class="com.testNG.hybrid.automation.framework.testscripts.LoginTest"/>
       </group> <!-- smoke -->
     </groups>
-    <test started-at="2026-01-05T19:16:05 IST" name="Default test" finished-at="2026-01-05T19:19:30 IST" duration-ms="204203">
+    <test started-at="2026-01-06T19:09:52 IST" name="Default test" finished-at="2026-01-06T19:13:32 IST" duration-ms="219780">
       <class name="com.testNG.hybrid.automation.framework.testscripts.InterviewTest">
-        <test-method signature="LoginTest()[pri:0, instance:com.testNG.hybrid.automation.framework.testscripts.InterviewTest@6a2f6f80]" started-at="2026-01-05T19:16:05 IST" name="LoginTest" finished-at="2026-01-05T19:16:21 IST" duration-ms="15413" status="PASS">
+        <test-method signature="LoginTest()[pri:0, instance:com.testNG.hybrid.automation.framework.testscripts.InterviewTest@6a2f6f80]" started-at="2026-01-06T19:09:52 IST" name="LoginTest" finished-at="2026-01-06T19:10:07 IST" duration-ms="14731" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- LoginTest -->
       </class> <!-- com.testNG.hybrid.automation.framework.testscripts.InterviewTest -->
       <class name="com.testNG.hybrid.automation.framework.testscripts.LoginTest">
-        <test-method is-config="true" signature="launch()[pri:0, instance:com.testNG.hybrid.automation.framework.testscripts.LoginTest@d21a74c]" started-at="2026-01-05T19:16:21 IST" name="launch" finished-at="2026-01-05T19:16:24 IST" duration-ms="3013" status="PASS">
+        <test-method is-config="true" signature="launch()[pri:0, instance:com.testNG.hybrid.automation.framework.testscripts.LoginTest@6e509ffa]" started-at="2026-01-06T19:10:07 IST" name="launch" finished-at="2026-01-06T19:10:14 IST" duration-ms="6730" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- launch -->
-        <test-method signature="loginWithValidCredentials()[pri:0, instance:com.testNG.hybrid.automation.framework.testscripts.LoginTest@d21a74c]" started-at="2026-01-05T19:16:24 IST" name="loginWithValidCredentials" finished-at="2026-01-05T19:16:28 IST" duration-ms="4008" status="PASS">
+        <test-method signature="loginWithValidCredentials()[pri:0, instance:com.testNG.hybrid.automation.framework.testscripts.LoginTest@6e509ffa]" started-at="2026-01-06T19:10:14 IST" name="loginWithValidCredentials" finished-at="2026-01-06T19:10:17 IST" duration-ms="3487" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- loginWithValidCredentials -->
-        <test-method signature="loginWithValidCredentialsUsingExcel()[pri:1, instance:com.testNG.hybrid.automation.framework.testscripts.LoginTest@d21a74c]" started-at="2026-01-05T19:16:28 IST" name="loginWithValidCredentialsUsingExcel" finished-at="2026-01-05T19:16:33 IST" duration-ms="5238" status="PASS">
+        <test-method signature="loginWithValidCredentialsUsingExcel()[pri:1, instance:com.testNG.hybrid.automation.framework.testscripts.LoginTest@6e509ffa]" started-at="2026-01-06T19:10:17 IST" name="loginWithValidCredentialsUsingExcel" finished-at="2026-01-06T19:10:22 IST" duration-ms="5179" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- loginWithValidCredentialsUsingExcel -->
-        <test-method signature="validLoginWIthDataProvider(java.lang.String,java.lang.String)[pri:2, instance:com.testNG.hybrid.automation.framework.testscripts.LoginTest@d21a74c]" started-at="2026-01-05T19:16:33 IST" name="validLoginWIthDataProvider" data-provider="validCredentialsData" finished-at="2026-01-05T19:16:37 IST" duration-ms="3327" status="PASS">
+        <test-method signature="validLoginWIthDataProvider(java.lang.String,java.lang.String)[pri:2, instance:com.testNG.hybrid.automation.framework.testscripts.LoginTest@6e509ffa]" started-at="2026-01-06T19:10:22 IST" name="validLoginWIthDataProvider" data-provider="validCredentialsData" finished-at="2026-01-06T19:10:25 IST" duration-ms="2906" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -56,7 +56,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- validLoginWIthDataProvider -->
-        <test-method signature="validLoginWIthDataProvider(java.lang.String,java.lang.String)[pri:2, instance:com.testNG.hybrid.automation.framework.testscripts.LoginTest@d21a74c]" started-at="2026-01-05T19:16:37 IST" name="validLoginWIthDataProvider" data-provider="validCredentialsData" finished-at="2026-01-05T19:16:41 IST" duration-ms="4248" status="PASS">
+        <test-method signature="validLoginWIthDataProvider(java.lang.String,java.lang.String)[pri:2, instance:com.testNG.hybrid.automation.framework.testscripts.LoginTest@6e509ffa]" started-at="2026-01-06T19:10:25 IST" name="validLoginWIthDataProvider" data-provider="validCredentialsData" finished-at="2026-01-06T19:10:29 IST" duration-ms="3969" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -72,7 +72,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- validLoginWIthDataProvider -->
-        <test-method signature="validLoginWIthDataProvider(java.lang.String,java.lang.String)[pri:2, instance:com.testNG.hybrid.automation.framework.testscripts.LoginTest@d21a74c]" started-at="2026-01-05T19:16:41 IST" name="validLoginWIthDataProvider" data-provider="validCredentialsData" finished-at="2026-01-05T19:16:45 IST" duration-ms="3661" status="PASS">
+        <test-method signature="validLoginWIthDataProvider(java.lang.String,java.lang.String)[pri:2, instance:com.testNG.hybrid.automation.framework.testscripts.LoginTest@6e509ffa]" started-at="2026-01-06T19:10:29 IST" name="validLoginWIthDataProvider" data-provider="validCredentialsData" finished-at="2026-01-06T19:10:35 IST" duration-ms="5410" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -88,7 +88,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- validLoginWIthDataProvider -->
-        <test-method signature="validLoginWIthDataProvider(java.lang.String,java.lang.String)[pri:2, instance:com.testNG.hybrid.automation.framework.testscripts.LoginTest@d21a74c]" started-at="2026-01-05T19:16:45 IST" name="validLoginWIthDataProvider" data-provider="validCredentialsData" finished-at="2026-01-05T19:16:49 IST" duration-ms="4458" status="PASS">
+        <test-method signature="validLoginWIthDataProvider(java.lang.String,java.lang.String)[pri:2, instance:com.testNG.hybrid.automation.framework.testscripts.LoginTest@6e509ffa]" started-at="2026-01-06T19:10:35 IST" name="validLoginWIthDataProvider" data-provider="validCredentialsData" finished-at="2026-01-06T19:10:40 IST" duration-ms="4839" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -104,7 +104,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- validLoginWIthDataProvider -->
-        <test-method signature="validLoginWIthDataProvider(java.lang.String,java.lang.String)[pri:2, instance:com.testNG.hybrid.automation.framework.testscripts.LoginTest@d21a74c]" started-at="2026-01-05T19:16:49 IST" name="validLoginWIthDataProvider" data-provider="validCredentialsData" finished-at="2026-01-05T19:16:54 IST" duration-ms="4641" status="PASS">
+        <test-method signature="validLoginWIthDataProvider(java.lang.String,java.lang.String)[pri:2, instance:com.testNG.hybrid.automation.framework.testscripts.LoginTest@6e509ffa]" started-at="2026-01-06T19:10:40 IST" name="validLoginWIthDataProvider" data-provider="validCredentialsData" finished-at="2026-01-06T19:10:47 IST" duration-ms="7023" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -120,7 +120,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- validLoginWIthDataProvider -->
-        <test-method signature="validLoginWIthDataProvider(java.lang.String,java.lang.String)[pri:2, instance:com.testNG.hybrid.automation.framework.testscripts.LoginTest@d21a74c]" started-at="2026-01-05T19:16:54 IST" name="validLoginWIthDataProvider" data-provider="validCredentialsData" finished-at="2026-01-05T19:16:58 IST" duration-ms="4440" status="PASS">
+        <test-method signature="validLoginWIthDataProvider(java.lang.String,java.lang.String)[pri:2, instance:com.testNG.hybrid.automation.framework.testscripts.LoginTest@6e509ffa]" started-at="2026-01-06T19:10:47 IST" name="validLoginWIthDataProvider" data-provider="validCredentialsData" finished-at="2026-01-06T19:10:51 IST" duration-ms="4174" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -136,7 +136,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- validLoginWIthDataProvider -->
-        <test-method signature="validLoginWIthDataProvider(java.lang.String,java.lang.String)[pri:2, instance:com.testNG.hybrid.automation.framework.testscripts.LoginTest@d21a74c]" started-at="2026-01-05T19:16:58 IST" name="validLoginWIthDataProvider" data-provider="validCredentialsData" finished-at="2026-01-05T19:17:02 IST" duration-ms="3919" status="PASS">
+        <test-method signature="validLoginWIthDataProvider(java.lang.String,java.lang.String)[pri:2, instance:com.testNG.hybrid.automation.framework.testscripts.LoginTest@6e509ffa]" started-at="2026-01-06T19:10:51 IST" name="validLoginWIthDataProvider" data-provider="validCredentialsData" finished-at="2026-01-06T19:10:55 IST" duration-ms="3859" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -152,7 +152,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- validLoginWIthDataProvider -->
-        <test-method signature="invalidCredentials(java.lang.String,java.lang.String)[pri:3, instance:com.testNG.hybrid.automation.framework.testscripts.LoginTest@d21a74c]" started-at="2026-01-05T19:17:02 IST" name="invalidCredentials" data-provider="invalidCredentialsData" finished-at="2026-01-05T19:17:05 IST" duration-ms="2274" status="PASS">
+        <test-method signature="invalidCredentials(java.lang.String,java.lang.String)[pri:3, instance:com.testNG.hybrid.automation.framework.testscripts.LoginTest@6e509ffa]" started-at="2026-01-06T19:10:55 IST" name="invalidCredentials" data-provider="invalidCredentialsData" finished-at="2026-01-06T19:10:57 IST" duration-ms="2433" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -168,7 +168,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- invalidCredentials -->
-        <test-method signature="invalidCredentials(java.lang.String,java.lang.String)[pri:3, instance:com.testNG.hybrid.automation.framework.testscripts.LoginTest@d21a74c]" started-at="2026-01-05T19:17:05 IST" name="invalidCredentials" data-provider="invalidCredentialsData" finished-at="2026-01-05T19:17:06 IST" duration-ms="1857" status="PASS">
+        <test-method signature="invalidCredentials(java.lang.String,java.lang.String)[pri:3, instance:com.testNG.hybrid.automation.framework.testscripts.LoginTest@6e509ffa]" started-at="2026-01-06T19:10:57 IST" name="invalidCredentials" data-provider="invalidCredentialsData" finished-at="2026-01-06T19:11:00 IST" duration-ms="3083" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -184,7 +184,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- invalidCredentials -->
-        <test-method signature="invalidCredentials(java.lang.String,java.lang.String)[pri:3, instance:com.testNG.hybrid.automation.framework.testscripts.LoginTest@d21a74c]" started-at="2026-01-05T19:17:06 IST" name="invalidCredentials" data-provider="invalidCredentialsData" finished-at="2026-01-05T19:17:08 IST" duration-ms="1831" status="PASS">
+        <test-method signature="invalidCredentials(java.lang.String,java.lang.String)[pri:3, instance:com.testNG.hybrid.automation.framework.testscripts.LoginTest@6e509ffa]" started-at="2026-01-06T19:11:00 IST" name="invalidCredentials" data-provider="invalidCredentialsData" finished-at="2026-01-06T19:11:03 IST" duration-ms="2892" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -200,7 +200,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- invalidCredentials -->
-        <test-method signature="invalidCredentials(java.lang.String,java.lang.String)[pri:3, instance:com.testNG.hybrid.automation.framework.testscripts.LoginTest@d21a74c]" started-at="2026-01-05T19:17:08 IST" name="invalidCredentials" data-provider="invalidCredentialsData" finished-at="2026-01-05T19:17:10 IST" duration-ms="1845" status="PASS">
+        <test-method signature="invalidCredentials(java.lang.String,java.lang.String)[pri:3, instance:com.testNG.hybrid.automation.framework.testscripts.LoginTest@6e509ffa]" started-at="2026-01-06T19:11:03 IST" name="invalidCredentials" data-provider="invalidCredentialsData" finished-at="2026-01-06T19:11:06 IST" duration-ms="2745" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -216,7 +216,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- invalidCredentials -->
-        <test-method signature="invalidCredentials(java.lang.String,java.lang.String)[pri:3, instance:com.testNG.hybrid.automation.framework.testscripts.LoginTest@d21a74c]" started-at="2026-01-05T19:17:10 IST" name="invalidCredentials" data-provider="invalidCredentialsData" finished-at="2026-01-05T19:17:12 IST" duration-ms="1629" status="PASS">
+        <test-method signature="invalidCredentials(java.lang.String,java.lang.String)[pri:3, instance:com.testNG.hybrid.automation.framework.testscripts.LoginTest@6e509ffa]" started-at="2026-01-06T19:11:06 IST" name="invalidCredentials" data-provider="invalidCredentialsData" finished-at="2026-01-06T19:11:10 IST" duration-ms="3531" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -232,7 +232,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- invalidCredentials -->
-        <test-method signature="invalidCredentials(java.lang.String,java.lang.String)[pri:3, instance:com.testNG.hybrid.automation.framework.testscripts.LoginTest@d21a74c]" started-at="2026-01-05T19:17:12 IST" name="invalidCredentials" data-provider="invalidCredentialsData" finished-at="2026-01-05T19:17:13 IST" duration-ms="1745" status="PASS">
+        <test-method signature="invalidCredentials(java.lang.String,java.lang.String)[pri:3, instance:com.testNG.hybrid.automation.framework.testscripts.LoginTest@6e509ffa]" started-at="2026-01-06T19:11:10 IST" name="invalidCredentials" data-provider="invalidCredentialsData" finished-at="2026-01-06T19:11:12 IST" duration-ms="2726" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -248,7 +248,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- invalidCredentials -->
-        <test-method signature="invalidCredentials(java.lang.String,java.lang.String)[pri:3, instance:com.testNG.hybrid.automation.framework.testscripts.LoginTest@d21a74c]" started-at="2026-01-05T19:17:14 IST" name="invalidCredentials" data-provider="invalidCredentialsData" finished-at="2026-01-05T19:17:15 IST" duration-ms="1939" status="PASS">
+        <test-method signature="invalidCredentials(java.lang.String,java.lang.String)[pri:3, instance:com.testNG.hybrid.automation.framework.testscripts.LoginTest@6e509ffa]" started-at="2026-01-06T19:11:12 IST" name="invalidCredentials" data-provider="invalidCredentialsData" finished-at="2026-01-06T19:11:15 IST" duration-ms="2584" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -264,17 +264,17 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- invalidCredentials -->
-        <test-method is-config="true" signature="closeApp()[pri:0, instance:com.testNG.hybrid.automation.framework.testscripts.LoginTest@d21a74c]" started-at="2026-01-05T19:17:15 IST" name="closeApp" finished-at="2026-01-05T19:17:16 IST" duration-ms="746" status="PASS">
+        <test-method is-config="true" signature="closeApp()[pri:0, instance:com.testNG.hybrid.automation.framework.testscripts.LoginTest@6e509ffa]" started-at="2026-01-06T19:11:15 IST" name="closeApp" finished-at="2026-01-06T19:11:15 IST" duration-ms="498" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- closeApp -->
       </class> <!-- com.testNG.hybrid.automation.framework.testscripts.LoginTest -->
       <class name="com.testNG.hybrid.automation.framework.testscripts.RegisterTest">
-        <test-method is-config="true" signature="launch()[pri:0, instance:com.testNG.hybrid.automation.framework.testscripts.RegisterTest@2898ac89]" started-at="2026-01-05T19:17:16 IST" name="launch" finished-at="2026-01-05T19:17:18 IST" duration-ms="1953" status="PASS">
+        <test-method is-config="true" signature="launch()[pri:0, instance:com.testNG.hybrid.automation.framework.testscripts.RegisterTest@2898ac89]" started-at="2026-01-06T19:11:15 IST" name="launch" finished-at="2026-01-06T19:11:26 IST" duration-ms="10144" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- launch -->
-        <test-method signature="registration(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:com.testNG.hybrid.automation.framework.testscripts.RegisterTest@2898ac89]" started-at="2026-01-05T19:17:19 IST" name="registration" data-provider="getDataFromExcel" finished-at="2026-01-05T19:17:43 IST" duration-ms="24383" status="FAIL">
+        <test-method signature="registration(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:com.testNG.hybrid.automation.framework.testscripts.RegisterTest@2898ac89]" started-at="2026-01-06T19:11:26 IST" name="registration" data-provider="getDataFromExcel" finished-at="2026-01-06T19:11:50 IST" duration-ms="24001" status="FAIL">
           <params>
             <param index="0">
               <value>
@@ -350,7 +350,7 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- registration -->
-        <test-method signature="registration(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:com.testNG.hybrid.automation.framework.testscripts.RegisterTest@2898ac89]" started-at="2026-01-05T19:17:43 IST" name="registration" data-provider="getDataFromExcel" finished-at="2026-01-05T19:18:08 IST" duration-ms="24907" status="FAIL">
+        <test-method signature="registration(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:com.testNG.hybrid.automation.framework.testscripts.RegisterTest@2898ac89]" started-at="2026-01-06T19:11:50 IST" name="registration" data-provider="getDataFromExcel" finished-at="2026-01-06T19:12:12 IST" duration-ms="22312" status="FAIL">
           <params>
             <param index="0">
               <value>
@@ -426,7 +426,7 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- registration -->
-        <test-method signature="registration(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:com.testNG.hybrid.automation.framework.testscripts.RegisterTest@2898ac89]" started-at="2026-01-05T19:18:08 IST" name="registration" data-provider="getDataFromExcel" finished-at="2026-01-05T19:18:33 IST" duration-ms="24413" status="FAIL">
+        <test-method signature="registration(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:com.testNG.hybrid.automation.framework.testscripts.RegisterTest@2898ac89]" started-at="2026-01-06T19:12:12 IST" name="registration" data-provider="getDataFromExcel" finished-at="2026-01-06T19:12:34 IST" duration-ms="22351" status="FAIL">
           <params>
             <param index="0">
               <value>
@@ -502,7 +502,7 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- registration -->
-        <test-method signature="registration(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:com.testNG.hybrid.automation.framework.testscripts.RegisterTest@2898ac89]" started-at="2026-01-05T19:18:33 IST" name="registration" data-provider="getDataFromExcel" finished-at="2026-01-05T19:18:55 IST" duration-ms="22599" status="FAIL">
+        <test-method signature="registration(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:com.testNG.hybrid.automation.framework.testscripts.RegisterTest@2898ac89]" started-at="2026-01-06T19:12:34 IST" name="registration" data-provider="getDataFromExcel" finished-at="2026-01-06T19:12:56 IST" duration-ms="21661" status="FAIL">
           <params>
             <param index="0">
               <value>
@@ -578,7 +578,7 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- registration -->
-        <test-method signature="registration(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:com.testNG.hybrid.automation.framework.testscripts.RegisterTest@2898ac89]" started-at="2026-01-05T19:18:55 IST" name="registration" data-provider="getDataFromExcel" finished-at="2026-01-05T19:19:20 IST" duration-ms="24447" status="FAIL">
+        <test-method signature="registration(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:com.testNG.hybrid.automation.framework.testscripts.RegisterTest@2898ac89]" started-at="2026-01-06T19:12:56 IST" name="registration" data-provider="getDataFromExcel" finished-at="2026-01-06T19:13:18 IST" duration-ms="22357" status="FAIL">
           <params>
             <param index="0">
               <value>
@@ -654,13 +654,61 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- registration -->
-        <test-method is-config="true" signature="closeApp()[pri:0, instance:com.testNG.hybrid.automation.framework.testscripts.RegisterTest@2898ac89]" started-at="2026-01-05T19:19:20 IST" name="closeApp" finished-at="2026-01-05T19:19:20 IST" duration-ms="653" status="PASS">
+        <test-method is-config="true" signature="closeApp()[pri:0, instance:com.testNG.hybrid.automation.framework.testscripts.RegisterTest@2898ac89]" started-at="2026-01-06T19:13:18 IST" name="closeApp" finished-at="2026-01-06T19:13:19 IST" duration-ms="283" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- closeApp -->
       </class> <!-- com.testNG.hybrid.automation.framework.testscripts.RegisterTest -->
       <class name="com.testNG.hybrid.automation.framework.testscripts.StaleElementTest">
-        <test-method signature="login()[pri:0, instance:com.testNG.hybrid.automation.framework.testscripts.StaleElementTest@683dbc2c]" started-at="2026-01-05T19:19:20 IST" name="login" finished-at="2026-01-05T19:19:30 IST" duration-ms="9276" status="PASS">
+        <test-method signature="login()[pri:0, instance:com.testNG.hybrid.automation.framework.testscripts.StaleElementTest@683dbc2c]" started-at="2026-01-06T19:13:19 IST" name="login" finished-at="2026-01-06T19:13:32 IST" duration-ms="13159" status="FAIL">
+          <exception class="org.openqa.selenium.TimeoutException">
+            <message>
+              <![CDATA[Expected condition failed: waiting for element to be clickable: By.linkText: Login (tried for 10 second(s) with 500 milliseconds interval)
+Build info: version: '4.12.0', revision: '249f2a7d1b*'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.7'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 143.0.7499.170, chrome: {chromedriverVersion: 143.0.7499.169 (164b20aab62..., userDataDir: C:\Users\DELL\AppData\Local...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:63728}, goog:processID: 21412, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:63728/devtoo..., se:cdpVersion: 143.0.7499.170, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: cf7d885267ba97f9fdd9c916a99d6f1a]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.TimeoutException: Expected condition failed: waiting for element to be clickable: By.linkText: Login (tried for 10 second(s) with 500 milliseconds interval)
+Build info: version: '4.12.0', revision: '249f2a7d1b*'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.7'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 143.0.7499.170, chrome: {chromedriverVersion: 143.0.7499.169 (164b20aab62..., userDataDir: C:\Users\DELL\AppData\Local...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:63728}, goog:processID: 21412, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:63728/devtoo..., se:cdpVersion: 143.0.7499.170, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: cf7d885267ba97f9fdd9c916a99d6f1a
+at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
+at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:230)
+at com.testNG.hybrid.automation.framework.testscripts.StaleElementTest.login(StaleElementTest.java:31)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+at org.testng.TestRunner.privateRun(TestRunner.java:741)
+at org.testng.TestRunner.run(TestRunner.java:616)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+at org.testng.TestNG.runSuites(TestNG.java:1112)
+at org.testng.TestNG.run(TestNG.java:1079)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.TimeoutException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- login -->

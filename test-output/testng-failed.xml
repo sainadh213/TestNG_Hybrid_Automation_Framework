@@ -10,6 +10,11 @@
           <include name="registration" invocation-numbers="0 1 2 3 4"/>
         </methods>
       </class> <!-- com.testNG.hybrid.automation.framework.testscripts.RegisterTest -->
+      <class name="com.testNG.hybrid.automation.framework.testscripts.StaleElementTest">
+        <methods>
+          <include name="login"/>
+        </methods>
+      </class> <!-- com.testNG.hybrid.automation.framework.testscripts.StaleElementTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
