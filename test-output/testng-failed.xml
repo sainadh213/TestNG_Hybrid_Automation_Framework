@@ -3,13 +3,6 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.testNG.hybrid.automation.framework.testscripts.RegisterTest">
-        <methods>
-          <include name="closeApp"/>
-          <include name="launch"/>
-          <include name="registration" invocation-numbers="0 1 2 3 4"/>
-        </methods>
-      </class> <!-- com.testNG.hybrid.automation.framework.testscripts.RegisterTest -->
       <class name="com.testNG.hybrid.automation.framework.testscripts.StaleElementTest">
         <methods>
           <include name="login"/>
