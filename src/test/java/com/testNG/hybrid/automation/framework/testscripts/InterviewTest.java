@@ -21,10 +21,10 @@ public class InterviewTest {
 		driver.findElement(By.linkText("Login")).click();
 		driver.findElement(By.id("input-email")).sendKeys("sainadh123@gmail.com");
 		driver.findElement(By.id("input-password")).sendKeys("sainadh@123");
-		WebDriverWait wait=new WebDriverWait(driver, Duration.ofSeconds(10));
+		/*WebDriverWait wait=new WebDriverWait(driver, Duration.ofSeconds(10));
 		wait.until(ExpectedConditions.elementToBeClickable(By.xpath("//input[@value='Login']"))).click();
 	//	driver.findElement(By.xpath("//input[@value='Login']")).click();
-		driver.close();
+		driver.close();*/
 
 	}
 

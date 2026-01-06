@@ -24,11 +24,11 @@ public class StaleElementTest {
 		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
 		driver.get("https://tutorialsninja.com/demo/");
 		driver.findElement(By.xpath("//span[text()='My Account']")).click();
-		//WebElement loginBtn = driver.findElement(By.linkText("Login"));
-		//driver.navigate().refresh();
-		//loginBtn.click();
-		WebDriverWait wait=new WebDriverWait(driver, Duration.ofSeconds(10));
-		wait.until(ExpectedConditions.elementToBeClickable(By.linkText("Login"))).click();
+		WebElement loginBtn = driver.findElement(By.linkText("Login"));
+		driver.navigate().refresh();
+		loginBtn.click();
+	//	WebDriverWait wait=new WebDriverWait(driver, Duration.ofSeconds(10));
+		//wait.until(ExpectedConditions.elementToBeClickable(By.linkText("Login"))).click();
 		
 		/*List<WebElement> options = driver.findElements(By.xpath("//a[@class='dropdown-toggle' and text()='Desktops' or text()='Laptops & Notebooks' or text()='Components']"));
 	for(WebElement option:options)
@@ -43,7 +43,7 @@ public class StaleElementTest {
 	File src = ts.getScreenshotAs(OutputType.FILE);
 	File dest=new File("C:\\Users\\SaiNadh\\eclipse-workspace\\automation-project\\Screenshots\\test.png");
 	FileHandler.copy(src, dest);*/
-	driver.close();
+	//driver.close();
 	}
 	
 	
