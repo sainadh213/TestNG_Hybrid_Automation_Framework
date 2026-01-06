@@ -23,10 +23,10 @@ public class StaleElementTest {
 		driver.manage().timeouts().pageLoadTimeout(Duration.ofSeconds(10));
 		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
 		driver.get("https://tutorialsninja.com/demo/");
-		driver.findElement(By.xpath("//span[text()='My Account']")).click();
-		WebElement loginBtn = driver.findElement(By.linkText("Login"));
-		driver.navigate().refresh();
-		loginBtn.click();
+		//driver.findElement(By.xpath("//span[text()='My Account']")).click();
+		//WebElement loginBtn = driver.findElement(By.linkText("Login"));
+		//driver.navigate().refresh();
+		//loginBtn.click();
 	//	WebDriverWait wait=new WebDriverWait(driver, Duration.ofSeconds(10));
 		//wait.until(ExpectedConditions.elementToBeClickable(By.linkText("Login"))).click();
 		
