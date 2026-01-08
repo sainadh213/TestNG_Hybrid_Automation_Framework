@@ -10,6 +10,17 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.annotations.Test;
 
 public class InterviewTest {
+	@Test
+	public void demo()
+	{
+		WebDriver driver = new ChromeDriver();
+		driver.manage().window().maximize();
+		driver.get("https://tutorialsninja.com/demo/");
+		driver.manage().timeouts().pageLoadTimeout(Duration.ofSeconds(20));
+		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(20));
+		WebDriverWait wait=new WebDriverWait(driver, Duration.ofSeconds(20));
+		wait.until(ExpectedConditions.elementToBeClickable(By.xpath("//a[@title='My Account']"))).click();
+	}
 	@Test(groups={"practice"})
 	public void LoginTest() {
 		WebDriver driver = new ChromeDriver();
