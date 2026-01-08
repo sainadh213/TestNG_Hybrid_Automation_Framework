@@ -25,7 +25,7 @@ public class InterviewTest {
 	driver.findElement(By.id("input-password")).sendKeys("sainadh@123");
 		//WebDriverWait wait=new WebDriverWait(driver, Duration.ofSeconds(10));
 		wait.until(ExpectedConditions.elementToBeClickable(By.xpath("//input[@value='Login']"))).click();
-		driver.findElement(By.xpath("//input[@value='Login']")).click();
+		//driver.findElement(By.xpath("//input[@value='Login']")).click();
 		driver.close();
 
 	}
