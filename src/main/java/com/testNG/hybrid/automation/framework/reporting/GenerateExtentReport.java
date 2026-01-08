@@ -14,9 +14,14 @@ public class GenerateExtentReport {
 	public static ExtentReports generateExtentReport() throws Throwable
 	{
 		ExtentReports extent=new ExtentReports();
-		File extentFile=new File(System.getProperty("user.dir")+"\\ExtentReports\\ExtentReport.html");
-		ExtentSparkReporter extentSpark=new ExtentSparkReporter(extentFile);
+		//File extentFilePath=new File(System.getProperty("user.dir")+"\\ExtentReports\\ExtentReport.html");
+		String extentFilePath = System.getProperty("user.dir")
+                + File.separator + "ExtentReports"
+                + File.separator + "ExtentReport.html";
 		
+		ExtentSparkReporter extentSpark=new ExtentSparkReporter(extentFilePath);
+		
+		extentSpark.config().setEncoding("utf-8");
 		extentSpark.config().setTheme(Theme.STANDARD);
 		extentSpark.config().setDocumentTitle("Test Report");
 		extentSpark.config().setReportName("ExtentReport");
