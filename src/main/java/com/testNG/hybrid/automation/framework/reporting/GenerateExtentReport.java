@@ -15,6 +15,8 @@ public class GenerateExtentReport {
 	{
 		ExtentReports extent=new ExtentReports();
 		//File extentFilePath=new File(System.getProperty("user.dir")+"\\ExtentReports\\ExtentReport.html");
+		new File(System.getProperty("user.dir")
+	            + File.separator + "ExtentReports").mkdirs();
 		String extentFilePath = System.getProperty("user.dir")
                 + File.separator + "ExtentReports"
                 + File.separator + "ExtentReport.html";
@@ -24,8 +26,8 @@ public class GenerateExtentReport {
 		extentSpark.config().setEncoding("utf-8");
 		extentSpark.config().setTheme(Theme.STANDARD);
 		extentSpark.config().setDocumentTitle("Test Report");
-		extentSpark.config().setReportName("ExtentReport");
-		extentSpark.config().setTimeStampFormat("dd-MM-yyyy hh:mm:ss");
+		extentSpark.config().setReportName("Extent Automation Repor");
+		extentSpark.config().setTimeStampFormat("dd-MM-yyyy HH:mm:ss");
 		
 		extent.attachReporter(extentSpark);
 		
