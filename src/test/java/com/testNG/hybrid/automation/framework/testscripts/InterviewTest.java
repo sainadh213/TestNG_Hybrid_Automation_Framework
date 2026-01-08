@@ -16,7 +16,9 @@ public class InterviewTest {
 		driver.manage().window().maximize();
 		driver.get("https://tutorialsninja.com/demo/");
 		driver.manage().timeouts().pageLoadTimeout(Duration.ofSeconds(10));
-		//driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
+		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
+		WebDriverWait wait=new WebDriverWait(driver, Duration.ofSeconds(10));
+		wait.until(ExpectedConditions.elementToBeClickable(By.xpath("//span[text()='My Account']"))).click();
 		//driver.findElement(By.xpath("//span[text()='My Account']")).click();
 	//	driver.findElement(By.linkText("Login")).click();
 	//	driver.findElement(By.id("input-email")).sendKeys("sainadh123@gmail.com");
