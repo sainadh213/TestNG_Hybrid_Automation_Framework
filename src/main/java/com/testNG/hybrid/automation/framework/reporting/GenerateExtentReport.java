@@ -29,6 +29,8 @@ public class GenerateExtentReport {
 		extentSpark.config().setReportName("Extent Automation Repor");
 		extentSpark.config().setTimeStampFormat("dd-MM-yyyy HH:mm:ss");
 		
+		extentSpark.config().setOfflineMode(true);
+		
 		extent.attachReporter(extentSpark);
 		
 	
