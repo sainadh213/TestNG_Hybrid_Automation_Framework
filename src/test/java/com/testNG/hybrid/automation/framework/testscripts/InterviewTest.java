@@ -10,7 +10,7 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.annotations.Test;
 
 public class InterviewTest {
-	@Test
+	@Test(groups={"practice"})
 	public void demo()
 	{
 		WebDriver driver = new ChromeDriver();
