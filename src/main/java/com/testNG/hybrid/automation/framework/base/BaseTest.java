@@ -44,13 +44,15 @@ public class BaseTest {
 
 	}
 
+	protected static String getTimeStamp() {
+		return new SimpleDateFormat("yyyyMMdd_HHmmssSSS").format(new Date());
+	}
+
 	public static String captureScreenshot(String testName) throws Throwable {
 		/*
 		 * SimpleDateFormat format=new SimpleDateFormat("yyyyMMdd_HHmmss"); Date dt=new
 		 * Date(); String timeStamp = format.format(dt);
 		 */
-
-		String timeStamp = new SimpleDateFormat("yyyyMMdd_HHmmss").format(new Date());
 
 		WebDriver currentDriver = getDriver();
 		if (currentDriver == null) {
@@ -59,7 +61,7 @@ public class BaseTest {
 
 		TakesScreenshot ts = (TakesScreenshot) currentDriver;
 		File src = ts.getScreenshotAs(OutputType.FILE);
-		String path = System.getProperty("user.dir") + "\\Screenshots\\" + testName + "_" + timeStamp + ".png";
+		String path = System.getProperty("user.dir") + "\\Screenshots\\" + testName + "_" + getTimeStamp() + ".png";
 		File dest = new File(path);
 		FileHandler.copy(src, dest);
 		return path;

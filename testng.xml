@@ -9,7 +9,7 @@
   <test thread-count="3" name="Test">
   <groups>
   <run>
-  <include name="practice"></include>
+  <include name="smoke"></include>
   </run>
   </groups>
     <packages>

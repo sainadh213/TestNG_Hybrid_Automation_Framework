@@ -14,12 +14,8 @@ public class GenerateExtentReport {
 	public static ExtentReports generateExtentReport() throws Throwable
 	{
 		ExtentReports extent=new ExtentReports();
-		//File extentFilePath=new File(System.getProperty("user.dir")+"\\ExtentReports\\ExtentReport.html");
-		new File(System.getProperty("user.dir")
-	            + File.separator + "ExtentReports").mkdirs();
-		String extentFilePath = System.getProperty("user.dir")
-                + File.separator + "ExtentReports"
-                + File.separator + "ExtentReport.html";
+		File extentFilePath=new File(System.getProperty("user.dir")+"\\ExtentReports\\ExtentReport.html");
+		
 		
 		ExtentSparkReporter extentSpark=new ExtentSparkReporter(extentFilePath);
 		
@@ -29,7 +25,7 @@ public class GenerateExtentReport {
 		extentSpark.config().setReportName("Extent Automation Repor");
 		extentSpark.config().setTimeStampFormat("dd-MM-yyyy HH:mm:ss");
 		
-		extentSpark.config().setOfflineMode(true);
+		
 		
 		extent.attachReporter(extentSpark);
 		

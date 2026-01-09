@@ -19,14 +19,14 @@ public class RegisterTest extends BaseTest {
 	RegisterPage rp;
 
 	@Test(dataProvider = "getDataFromExcel",groups= {"smoke","regression"})
-	public void registration(String firstname,String lastname,String emial,String telephone,String password,String ConfirmPassword) {
+	public void registration(String firstname,String lastname,String email,String telephone,String password,String ConfirmPassword) {
 		hp = new HomePage(getDriver());
 		rp=new RegisterPage(getDriver());
 		hp.clickOnMyAccountDM();
 		hp.clickOnRegiter();
 		rp.enterFirstname(firstname);
 		rp.enterLastname(lastname);
-		rp.enterEmail(emial);
+		rp.enterEmail(email+"_"+getTimeStamp()+"@mailinator.com");
 		rp.enterPhonenumber(telephone);
 		rp.enterPassoword(password);
 		rp.enterConfirmPassword(password);

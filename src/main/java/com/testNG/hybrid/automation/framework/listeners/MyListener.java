@@ -82,14 +82,14 @@ public class MyListener implements ITestListener {
 	@Override
 	public void onFinish(ITestContext context) {
 		extent.flush();
-		/*String extentReportPath=System.getProperty("user.dir")+"\\ExtentReports\\ExtentReport.html";
+		String extentReportPath=System.getProperty("user.dir")+"\\ExtentReports\\ExtentReport.html";
 		File fi=new File(extentReportPath);
 		try {
 			Desktop.getDesktop().browse(fi.toURI());
 		} catch (IOException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
-		}*/
+		}
 
 	}
 
