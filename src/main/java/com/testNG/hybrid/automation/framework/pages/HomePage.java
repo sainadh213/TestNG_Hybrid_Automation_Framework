@@ -9,7 +9,7 @@ public class HomePage extends BasePage {
 		super(driver);
 	}
 
-	private By myAccountDM = By.xpath("//span[text()='My Account']");
+	private By myAccountDM = By.xpath("//a[@title='My Account']");
 	//private By loginBtn = By.xpath("//a[text()='Login']");
 	private By loginBtn =By.linkText("Login");
 	//private String loginBtn="%s";
